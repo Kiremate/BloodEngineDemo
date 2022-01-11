@@ -1,3 +1,3 @@
 [submodule "BloodEngine"]
-	path = ./libs/BloodEngine
+	path = BloodEngine
 	url = https://github.com/Kiremate/BloodEngine.git
