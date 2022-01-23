@@ -22,7 +22,7 @@ int main(int, char**)
     {
         // Se crea una ventana:
 
-        SDL_Window* window = SDL_CreateWindow("SDL2 Window Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 800, 600, SDL_WINDOW_SHOWN);
+        SDL_Window* window = SDL_CreateWindow("SDL2 Window Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 300, 600, SDL_WINDOW_SHOWN);
 
         if (not window)
         {
