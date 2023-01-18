@@ -2,6 +2,7 @@
 #include <ciso646>
 #include <iostream>
 #include "Scene.h"
+#include "Kernel.h"
 #include "Render_System.h"
 #include "Audio_System.h"
 #include "Physics_System.h"
@@ -25,7 +26,8 @@ int main(int, char**)
     // Prepare the Systems
     // Render
     std::unique_ptr<blood_engine::Render_System> render_system =
-        std::unique_ptr<blood_engine::Render_System>();
+		std::unique_ptr<blood_engine::Render_System>();
+    render_system->SetResolution(800, 600);
     // Physics
     std::unique_ptr<blood_engine::Physics_System> physics_system =
         std::unique_ptr<blood_engine::Physics_System>();
@@ -53,13 +55,7 @@ int main(int, char**)
                 running = false;
             }
         }
-
-        // Update the scene
-        scene.Update();
-        
-        // Render the scene
-        scene.Render();
-
+        kernel.Run(&scene);
         // Swap buffers
         SDL_GL_SwapWindow(window);
     }
