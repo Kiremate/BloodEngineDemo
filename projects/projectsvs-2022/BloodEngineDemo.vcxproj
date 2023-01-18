@@ -117,13 +117,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\libs\BloodEngine\headers;..\..\libs\BloodEngine\libs\windows\sdl2\include;..\..\libs\BloodEngine\libs\windows\opengl-toolkit\headers;..\..\libs\BloodEngine\libs\windows\thread-pool-2.0.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\engine\BloodEngine\headers;..\..\engine\BloodEngine\libs\windows\sdl2\include;..\..\engine\BloodEngine\libs\windows\opengl-toolkit\headers;..\..\engine\BloodEngine\libs\windows\thread-pool-2.0.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\libs\BloodEngine\libs\windows\sdl2\compiled-lib\x64;..\..\libs\BloodEngine\builds\x64\Debug;..\..\libs\BloodEngine\libs\windows\opengl-toolkit\lib\x64\Debug</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\engine\BloodEngine\libs\windows\sdl2\compiled-lib\x64;..\..\builds\x64\Debug;..\..\engine\BloodEngine\libs\windows\opengl-toolkit\lib\x64\Debug</AdditionalLibraryDirectories>
       <AdditionalDependencies>BloodEngine.lib;opengl32.lib;SDL2d.lib;SDL2maind.lib;winmm.lib;imm32.lib;version.lib;setupapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -135,7 +135,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\libs\BloodEngine\libs\windows\thread-pool-2.0.0;..\..\libs\BloodEngine\libs\windows\sdl2\include;..\..\libs\BloodEngine\libs\windows\opengl-toolkit\headers;..\..\libs\BloodEngine\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\engine\BloodEngine\libs\windows\thread-pool-2.0.0;..\..\engine\BloodEngine\libs\windows\sdl2\include;..\..\engine\BloodEngine\libs\windows\opengl-toolkit\headers;..\..\engine\BloodEngine\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -143,7 +143,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\libs\BloodEngine\libs\windows\sdl2\compiled-lib\x64;..\..\libs\BloodEngine\builds\x64\Release;..\..\libs\BloodEngine\libs\windows\opengl-toolkit\lib\x64\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\engine\BloodEngine\libs\windows\sdl2\compiled-lib\x64;..\..\builds\x64\Release;..\..\engine\BloodEngine\libs\windows\opengl-toolkit\lib\x64\Release</AdditionalLibraryDirectories>
       <AdditionalDependencies>BloodEngine.lib;opengl32.lib;opengl-toolkit-release.lib;SDL2.lib;SDL2main.lib;winmm.lib;imm32.lib;version.lib;setupapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
